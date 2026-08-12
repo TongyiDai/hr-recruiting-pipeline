@@ -43,7 +43,7 @@ description: "用用户授权的飞书 Base 或电子表格整理招聘流水，
 lark-cli auth status --json --verify
 ```
 
-确认 `identity=user` 且 `verified=true` 后再访问用户数据。身份未验证、权限不足或账号混用时停止读取，并说明阻塞点。
+支持 `auth status --json --verify` 的环境确认 `identity=user` 且 `verified=true` 后再访问用户数据。当前 CLI 构建若没有 `auth` 子命令，可退回 `contact +get-user --as user` 或 `task +get-my-tasks --as user` 做只读兼容探测。身份未验证、权限不足或账号混用时停止读取，并说明阻塞点。
 
 ### 3. 读取最小字段集
 

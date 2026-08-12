@@ -39,7 +39,7 @@
 lark-cli auth status --json --verify
 ```
 
-只有确认 `identity=user`、`verified=true` 且授权有效后，才能读取用户飞书数据。账号、租户或权限存在疑问时停止。
+只有在支持 `auth status --json --verify` 的环境里确认 `identity=user`、`verified=true` 且授权有效后，或当前 CLI 构建没有 `auth` 子命令但 `contact +get-user --as user` / `task +get-my-tasks --as user` 的只读兼容探测通过后，才能读取用户飞书数据。账号、租户或权限存在疑问时停止。
 
 ### 2. 读取最小字段
 
