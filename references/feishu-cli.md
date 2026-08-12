@@ -8,7 +8,7 @@
 lark-cli auth status --json --verify
 ```
 
-继续条件：响应中的 `identity` 为 `user`，`verified` 为 `true`，且 token 状态有效。命令失败、身份不符或租户不明确时停止。
+继续条件：支持 `auth status --json --verify` 的环境要求响应中的 `identity` 为 `user`，`verified` 为 `true`，且 token 状态有效。当前 CLI 构建若没有 `auth` 子命令，可退回 `contact +get-user --as user` 或 `task +get-my-tasks --as user` 做只读兼容探测。命令失败、身份不符或租户不明确时停止。
 
 ## Base 读取顺序
 

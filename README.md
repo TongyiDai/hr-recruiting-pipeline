@@ -53,6 +53,8 @@
 lark-cli auth status --json --verify
 ```
 
+支持 `auth status --json --verify` 的环境必须确认 `identity=user`、`verified=true`。当前 CLI 构建若没有 `auth` 子命令，可退回 `contact +get-user --as user` 或 `task +get-my-tasks --as user` 做只读兼容探测。
+
 读取 Base 字段与记录：
 
 ```bash
@@ -97,7 +99,7 @@ python3 scripts/analyze_pipeline.py \
 
 ## 安全边界
 
-- 默认使用 `--as user`，先确认 `identity=user` 与 `verified=true`。
+- 默认使用 `--as user`。支持 `auth status --json --verify` 的环境先确认 `identity=user` 与 `verified=true`；当前 CLI 构建若没有 `auth` 子命令，可退回 `contact +get-user --as user` 或 `task +get-my-tasks --as user` 做只读兼容探测。
 - 默认只读，不更新候选人阶段、不发送消息、不创建面试、不发 Offer。
 - 原始候选人数据不进入仓库、不上传外部服务、不写回飞书。
 - 报告不输出姓名、邮箱、电话、简历正文等直接识别信息。
