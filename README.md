@@ -1,8 +1,20 @@
-> “Skills encode the domain expertise, best practices, and step-by-step workflows Claude needs to give you useful help.” — [Anthropic Knowledge Work Plugins](https://github.com/anthropics/knowledge-work-plugins)
-
 # hr-recruiting-pipeline
 
 一个可复核、可本地运行、适配飞书的中文招聘流水 Skill。
+
+## 价值与适用场景
+
+它把分散的候选人状态整理成一份可复核的招聘漏斗，让招聘负责人快速看清当前阶段、转换损耗、处理时长和渠道效果。飞书负责提供授权数据，本地脚本负责聚合，人工保留招聘判断权。
+
+适合这些工作：
+
+- 周报或招聘例会前，快速汇总岗位招聘进展。
+- 面试量上升后，定位哪个阶段出现积压。
+- 比较内推、招聘网站等渠道的到面率和 Offer 接受率。
+- 根据阶段历史估算招聘周期，发现数据缺口。
+- 使用飞书 Base、Sheets 或脱敏 JSON/CSV 做只读分析。
+
+它适合做进展判断和数据整理，候选人录用、淘汰、排序、薪酬和晋升判断仍由人工完成。
 
 ## 先看懂它
 
@@ -101,10 +113,12 @@ python3 scripts/analyze_pipeline.py \
 
 ```bash
 python3 -m unittest discover -s tests -p 'test_*.py'
-python3 /Users/bytedance/.codex/skills/.system/skill-creator/scripts/quick_validate.py .
+python3 /path/to/skill-creator/scripts/quick_validate.py .
 ```
 
 当前假数据测试覆盖阶段归一、转换、招聘周期、来源效果和候选人编号脱敏。飞书命令可用占位符执行 `--dry-run`，不会访问真实数据。
+
+Agent 的触发条件、输入确认、执行顺序、输出格式和停止规则见 [Agent 使用须知](AGENT-GUIDE.md)。
 
 ## 上游与许可证
 

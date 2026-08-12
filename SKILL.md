@@ -166,6 +166,7 @@ lark-cli sheets +cells-get \
 
 ## 参考文件
 
+- `AGENT-GUIDE.md`：Agent 的触发条件、输入确认、执行顺序、输出格式和停止规则。
 - `references/feishu-cli.md`：飞书 CLI 的读取命令与安全调用顺序。
 - `references/input-schema.md`：推荐输入结构与字段映射。
 - `references/safety-boundaries.md`：隐私、权限和人工复核边界。
