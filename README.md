@@ -1,8 +1,8 @@
 > “Skills encode the domain expertise, best practices, and step-by-step workflows Claude needs to give you useful help.” — [Anthropic Knowledge Work Plugins](https://github.com/anthropics/knowledge-work-plugins)
 
-# HR Open Skills
+# hr-recruiting-pipeline
 
-把公开 HR Skill 做成可复核、可本地运行、适配飞书的中文版本；当前第一枚是招聘流水分析。
+一个可复核、可本地运行、适配飞书的中文招聘流水 Skill。
 
 ## 先看懂它
 
@@ -12,7 +12,7 @@
   <img src="assets/boards/pipeline-flow.svg" alt="招聘流水从来源经过筛选和面试进入 Offer 与接受" />
 </p>
 
-## 当前 Skill
+## 这个 Skill
 
 ### `hr-recruiting-pipeline`
 
@@ -108,6 +108,6 @@ python3 /Users/bytedance/.codex/skills/.system/skill-creator/scripts/quick_valid
 
 ## 上游与许可证
 
-本项目以 [Anthropic Human Resources Plugin](https://github.com/anthropics/knowledge-work-plugins/tree/658e077ffd7bdd50a12c19ec5ff36fe34c88be8a/human-resources) 的 `recruiting-pipeline` 为上游参考，固定版本和差异记录在 [UPSTREAM.md](UPSTREAM.md)。项目保留 Apache License 2.0 文本，见 [许可证](LICENSE-APACHE-2.0)。
+本项目以 [Anthropic Human Resources Plugin](https://github.com/anthropics/knowledge-work-plugins/tree/658e077ffd7bdd50a12c19ec5ff36fe34c88be8a/human-resources) 的 `recruiting-pipeline` 为上游参考。固定版本和差异记录在 [UPSTREAM.md](UPSTREAM.md)，项目保留 Apache License 2.0 文本，见 [许可证](LICENSE-APACHE-2.0)。
 
 中文说明、飞书适配、本地聚合脚本和测试属于本项目新增内容。本项目暂不代表 Anthropic 官方维护或背书。

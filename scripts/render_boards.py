@@ -52,7 +52,7 @@ def node_shape(node: dict, x: float, y: float, width: float = 128, height: float
 
 
 def title(scene: dict) -> str:
-    return text(96, 76, scene["intent"]["core_message"], 28, BLACK, anchor="start", weight=600) + text(96, 104, "HR Open Skills · recruiting-pipeline", 12, GRAY, anchor="start")
+    return text(96, 76, scene["intent"]["core_message"], 28, BLACK, anchor="start", weight=600) + text(96, 104, "hr-recruiting-pipeline", 12, GRAY, anchor="start")
 
 
 def render_axis(scene: dict) -> str:
