@@ -1,0 +1,49 @@
+[
+  {
+    "candidate_id": "c-001",
+    "stage": "Interview",
+    "entered_at": "2026-08-01T09:00:00+08:00",
+    "updated_at": "2026-08-05T18:00:00+08:00",
+    "source": "Referral",
+    "job": "产品经理",
+    "stage_history": [
+      {"stage": "Sourced", "entered_at": "2026-08-01T09:00:00+08:00", "exited_at": "2026-08-02T10:00:00+08:00"},
+      {"stage": "Screen", "entered_at": "2026-08-02T10:00:00+08:00", "exited_at": "2026-08-03T15:00:00+08:00"},
+      {"stage": "Interview", "entered_at": "2026-08-03T15:00:00+08:00", "exited_at": null}
+    ]
+  },
+  {
+    "candidate_id": "c-002",
+    "stage": "已录用",
+    "entered_at": "2026-07-20",
+    "updated_at": "2026-08-04",
+    "accepted_at": "2026-08-04",
+    "source": "Referral",
+    "job": "产品经理",
+    "stage_history": [
+      {"stage": "Sourced", "entered_at": "2026-07-20", "exited_at": "2026-07-21"},
+      {"stage": "Screen", "entered_at": "2026-07-21", "exited_at": "2026-07-23"},
+      {"stage": "Interview", "entered_at": "2026-07-23", "exited_at": "2026-07-28"},
+      {"stage": "Debrief", "entered_at": "2026-07-28", "exited_at": "2026-07-29"},
+      {"stage": "Offer", "entered_at": "2026-07-29", "exited_at": "2026-08-04"},
+      {"stage": "Accepted", "entered_at": "2026-08-04", "exited_at": null}
+    ]
+  },
+  {
+    "candidate_id": "c-003",
+    "stage": "Screen",
+    "entered_at": "2026-08-06",
+    "updated_at": "2026-08-07",
+    "source": "Job Board",
+    "job": "运营",
+    "stage_history": []
+  },
+  {
+    "candidate_id": "c-004",
+    "stage": "Rejected",
+    "entered_at": "2026-08-02",
+    "updated_at": "2026-08-03",
+    "source": "Job Board",
+    "job": "运营"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {
+    "core_message": "聚合数据提供证据，招聘决定保留人工复核。",
+    "composition": "tension-contrast",
+    "focus_node": "judgment"
+  },
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "facts", "type": "plane", "label": "数据事实", "importance": 4},
+    {"id": "rules", "type": "rect", "label": "计算规则", "importance": 3},
+    {"id": "judgment", "type": "cube", "label": "人工判断", "importance": 5, "accent": true},
+    {"id": "boundary", "type": "frame", "label": "决策边界", "importance": 2}
+  ],
+  "edges": [
+    {"from": "facts", "to": "rules", "relation": "计算"},
+    {"from": "rules", "to": "judgment", "relation": "供复核"},
+    {"from": "boundary", "to": "judgment", "relation": "保留"}
+  ]
+}

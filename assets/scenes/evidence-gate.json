@@ -1,0 +1,22 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {
+    "core_message": "范围和字段先固定，报告才可复核。",
+    "composition": "input-process-output",
+    "focus_node": "aggregate"
+  },
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "scope", "type": "plane", "label": "授权范围", "importance": 3},
+    {"id": "fields", "type": "plane", "label": "最小字段", "importance": 3},
+    {"id": "aggregate", "type": "cube", "label": "本地聚合", "importance": 5, "accent": true},
+    {"id": "report", "type": "frame", "label": "聚合报告", "importance": 3},
+    {"id": "review", "type": "point", "label": "人工复核", "importance": 2}
+  ],
+  "edges": [
+    {"from": "scope", "to": "aggregate", "relation": "限定"},
+    {"from": "fields", "to": "aggregate", "relation": "输入"},
+    {"from": "aggregate", "to": "report", "relation": "输出"},
+    {"from": "report", "to": "review", "relation": "解释"}
+  ]
+}

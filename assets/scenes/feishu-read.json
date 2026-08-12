@@ -1,0 +1,22 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {
+    "core_message": "飞书读取链先验证身份，再读取最小字段。",
+    "composition": "layered-architecture",
+    "focus_node": "identity"
+  },
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "identity", "type": "cube", "label": "用户身份", "importance": 5, "accent": true},
+    {"id": "resource", "type": "plane", "label": "飞书资源", "importance": 3},
+    {"id": "mapping", "type": "rect", "label": "字段映射", "importance": 3},
+    {"id": "records", "type": "plane", "label": "只读记录", "importance": 2},
+    {"id": "local", "type": "frame", "label": "本地分析", "importance": 3}
+  ],
+  "edges": [
+    {"from": "identity", "to": "resource", "relation": "授权"},
+    {"from": "resource", "to": "mapping", "relation": "解析"},
+    {"from": "mapping", "to": "records", "relation": "读取"},
+    {"from": "records", "to": "local", "relation": "脱敏"}
+  ]
+}

@@ -1,0 +1,8 @@
+This package adapts concepts and source material from Anthropic's knowledge-work-plugins repository.
+
+Upstream project: https://github.com/anthropics/knowledge-work-plugins
+Upstream plugin: human-resources
+Upstream revision: 658e077ffd7bdd50a12c19ec5ff36fe34c88be8a
+License: Apache License 2.0; see LICENSE-APACHE-2.0.
+
+Chinese documentation, Feishu/Lark CLI integration guidance, local analysis code, and tests in this package are project additions.

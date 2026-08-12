@@ -1,0 +1,3 @@
+display_name: "招聘流水分析"
+short_description: "基于飞书用户态数据整理招聘阶段、流转速度与漏斗指标"
+default_prompt: "使用 $hr-recruiting-pipeline 读取我明确授权的飞书招聘流水，先说明数据范围，再输出阶段分布、转换率、阶段时长、来源效果、数据质量和人工复核边界。"

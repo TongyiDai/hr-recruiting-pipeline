@@ -1,0 +1,24 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {
+    "core_message": "招聘流水沿阶段推进，漏斗收窄点需要被看见。",
+    "composition": "axis-flow",
+    "focus_node": "interview"
+  },
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "sourced", "type": "point", "label": "来源", "importance": 2},
+    {"id": "screen", "type": "point", "label": "初筛", "importance": 2},
+    {"id": "interview", "type": "point", "label": "面试", "importance": 5, "accent": true},
+    {"id": "debrief", "type": "point", "label": "复盘", "importance": 2},
+    {"id": "offer", "type": "point", "label": "Offer", "importance": 3},
+    {"id": "accepted", "type": "point", "label": "接受", "importance": 3}
+  ],
+  "edges": [
+    {"from": "sourced", "to": "screen", "relation": "进入"},
+    {"from": "screen", "to": "interview", "relation": "通过"},
+    {"from": "interview", "to": "debrief", "relation": "反馈"},
+    {"from": "debrief", "to": "offer", "relation": "推进"},
+    {"from": "offer", "to": "accepted", "relation": "确认"}
+  ]
+}
