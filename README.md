@@ -1,4 +1,6 @@
-# hr-recruiting-pipeline
+# 招聘流水分析
+
+`hr-recruiting-pipeline`
 
 一个可复核、可本地运行、适配飞书的中文招聘流水 Skill。
 
