@@ -117,7 +117,8 @@ python3 scripts/analyze_pipeline.py \
 
 ```bash
 python3 -m unittest discover -s tests -p 'test_*.py'
-python3 /path/to/skill-creator/scripts/quick_validate.py .
+# 可选：若本机已安装 skill-creator 工具，可额外校验 SKILL.md frontmatter
+# python3 "$SKILL_CREATOR/scripts/quick_validate.py" .
 ```
 
 当前假数据测试覆盖阶段归一、转换、招聘周期、来源效果和候选人编号脱敏。飞书命令可用占位符执行 `--dry-run`，不会访问真实数据。
@@ -126,6 +127,6 @@ Agent 的触发条件、输入确认、执行顺序、输出格式和停止规�
 
 ## 上游与许可证
 
-本项目以 [Anthropic Human Resources Plugin](https://github.com/anthropics/knowledge-work-plugins/tree/658e077ffd7bdd50a12c19ec5ff36fe34c88be8a/human-resources) 的 `recruiting-pipeline` 为上游参考。固定版本和差异记录在 [UPSTREAM.md](UPSTREAM.md)，项目保留 Apache License 2.0 文本，见 [许可证](LICENSE-APACHE-2.0)。
+本项目以 [Anthropic Human Resources Plugin](https://github.com/anthropics/knowledge-work-plugins/tree/658e077ffd7bdd50a12c19ec5ff36fe34c88be8a/human-resources) 的 `recruiting-pipeline` 为上游参考。固定版本和差异记录在 [UPSTREAM.md](UPSTREAM.md)，项目保留 Apache License 2.0 文本，见 [许可证](LICENSE)。
 
 中文说明、飞书适配、本地聚合脚本和测试属于本项目新增内容。本项目暂不代表 Anthropic 官方维护或背书。
