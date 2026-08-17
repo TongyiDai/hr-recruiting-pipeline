@@ -30,7 +30,7 @@
 招聘数据先经过身份校验和字段映射，再进入本地聚合，最后输出阶段分布、转换率、时长和来源效果。默认只读，候选人级别的录用、淘汰与排序留给人工判断。
 
 <p align="center">
-  <img src="assets/boards/pipeline-flow.svg" alt="招聘流水从来源经过筛选和面试进入 Offer 与接受" />
+  <img src="assets/boards/pipeline-flow.svg?v=2" alt="招聘流水从来源经过筛选和面试进入 Offer 与接受" />
 </p>
 
 ## 这个 Skill
@@ -51,7 +51,7 @@
 先确认“谁授权、读什么、看哪段时间”，再读取最小字段集。飞书 CLI 负责读取，分析脚本留在本地，结果只输出聚合数据和质量提示。
 
 <p align="center">
-  <img src="assets/boards/feishu-read.svg" alt="飞书用户身份经过资源解析后只读招聘数据" />
+  <img src="assets/boards/feishu-read.svg?v=2" alt="飞书用户身份经过资源解析后只读招聘数据" />
 </p>
 
 快速检查身份：
@@ -101,7 +101,7 @@ python3 scripts/analyze_pipeline.py \
 脚本保留三层证据：输入范围、规则计算、人工解释。它可以告诉你漏斗在哪一阶段变窄、哪个渠道样本达到面试或接受 Offer；它不会替招聘负责人决定谁该录用或淘汰。
 
 <p align="center">
-  <img src="assets/boards/evidence-gate.svg" alt="输入数据经过字段映射和聚合后形成可复核报告" />
+  <img src="assets/boards/evidence-gate.svg?v=2" alt="输入数据经过字段映射和聚合后形成可复核报告" />
 </p>
 
 ## 安全边界
@@ -113,7 +113,7 @@ python3 scripts/analyze_pipeline.py \
 - 候选人排序、淘汰、录用、薪酬判断需要人工复核和明确规则。
 
 <p align="center">
-  <img src="assets/boards/human-boundary.svg" alt="聚合数据提供证据，人工负责招聘决策" />
+  <img src="assets/boards/human-boundary.svg?v=2" alt="聚合数据提供证据，人工负责招聘决策" />
 </p>
 
 详细边界见 [Skill 说明](SKILL.md)、[飞书 CLI 适配](references/feishu-cli.md) 和 [安全说明](references/safety-boundaries.md)。
