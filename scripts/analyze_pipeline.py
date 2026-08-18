@@ -327,7 +327,7 @@ def analyze(records: list[dict[str, Any]], as_of: datetime | None = None) -> dic
 
 def markdown_report(report: dict[str, Any]) -> str:
     lines = [
-        "# 招聘流水分析",
+        "# 招聘漏斗分析",
         "",
         f"- 截止时间：{report['as_of']}",
         f"- 记录数：{report['scope']['record_count']}",

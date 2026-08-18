@@ -1,4 +1,7 @@
-# 招聘流水分析
+> “漏斗卡在哪一层，一眼就能看出来。”
+> ——本项目说明
+
+<h1 align="center">招聘漏斗分析</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Agent%20Skill-agentskills.io-2F6BFF" alt="Agent Skill">
@@ -9,7 +12,7 @@
 
 `hr-recruiting-pipeline`
 
-一个可复核、可本地运行、适配飞书的中文招聘流水 Skill。
+一个可复核、可本地运行、适配飞书的中文招聘漏斗分析 Skill。
 
 ## 价值与适用场景
 
@@ -30,7 +33,7 @@
 招聘数据先经过身份校验和字段映射，再进入本地聚合，最后输出阶段分布、转换率、时长和来源效果。默认只读，候选人级别的录用、淘汰与排序留给人工判断。
 
 <p align="center">
-  <img src="assets/boards/pipeline-flow.svg?v=2" alt="招聘流水从来源经过筛选和面试进入 Offer 与接受" />
+  <img src="assets/boards/pipeline-flow.svg?v=2" alt="招聘漏斗从来源经过筛选和面试进入 Offer 与接受" />
 </p>
 
 ## 这个 Skill

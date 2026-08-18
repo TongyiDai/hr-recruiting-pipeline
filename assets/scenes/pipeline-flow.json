@@ -1,7 +1,7 @@
 {
   "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
   "intent": {
-    "core_message": "招聘流水沿阶段推进，漏斗收窄点需要被看见。",
+    "core_message": "招聘漏斗沿阶段推进，收窄点需要被看见。",
     "composition": "axis-flow",
     "focus_node": "interview"
   },
